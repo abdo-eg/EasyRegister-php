@@ -96,6 +96,10 @@ if(isset($_GET['logout'])){
         .profile a:hover {
             text-decoration: underline;
         }
+        img{
+            height: 200px;
+            width:200px;
+        }
     </style>
 </head>
 <body>
