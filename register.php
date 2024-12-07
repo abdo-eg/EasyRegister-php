@@ -28,6 +28,7 @@ if(isset($_POST['register'])){
 	    	if($insert){
 	    	    move_uploaded_file($image_tmp_name, $image_folder);
 	    	    $message[]='registered successfully!';
+	    	    header('location:login.php');
 	    	}else{
 	    	    $message[]='registeration failed!';
 	    	}
@@ -144,7 +145,7 @@ if(isset($_POST['register'])){
             <input type="password" id="cpassword" name="cpassword" required>
 
             <label for="image">Upload Profile Image:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
+            <input type="file" id="image" name="image" accept="image/*" >
 
             <button type="submit" name="register">Register</button>
         </form>
